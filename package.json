@@ -1,0 +1,20 @@
+{
+  "name": "mapper.io",
+  "version": "1.0.0",
+  "description": "A simple web app where you can look at the world map and also interact with her. It is made using React,",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://samedskulj: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@github.com/samedskulj/mapper.io.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/samedskulj/mapper.io/issues"
+  },
+  "homepage": "https://github.com/samedskulj/mapper.io#readme"
+}
