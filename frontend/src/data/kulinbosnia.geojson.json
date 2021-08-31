@@ -1,10 +1,10 @@
 {
   "type": "Feature",
   "properties": {
-    "stroke": "#cd4cb7",
+    "stroke": "#555555",
     "stroke-width": 2,
     "stroke-opacity": 1,
-    "fill": "#ce27c8",
+    "fill": "#f96a0b",
     "fill-opacity": 0.5
   },
   "geometry": {
