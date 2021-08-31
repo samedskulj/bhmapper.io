@@ -16,5 +16,8 @@
   "bugs": {
     "url": "https://github.com/samedskulj/mapper.io/issues"
   },
-  "homepage": "https://github.com/samedskulj/mapper.io#readme"
+  "homepage": "https://github.com/samedskulj/mapper.io#readme",
+  "dependencies": {
+    "react-router-dom": "^5.2.1"
+  }
 }
