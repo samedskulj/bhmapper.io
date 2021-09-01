@@ -1,6 +1,5 @@
 .main_page_section {
   display: flex;
-
   height: 80vh;
   position: relative;
   align-items: center;
@@ -26,20 +25,18 @@
 }
 .main_page_section h2 {
   position: absolute;
-  top: 35%;
+  top: 0;
   color: rgba(102, 102, 102, 0.198);
-  left: 50%;
-  transform: translate(-50%, -50%);
+  left: 0;
   font-size: 30rem;
-  width: 100%;
-
+  height: 100%;
+  width: 99%;
   margin: 0;
   padding: 0;
 }
 #first_paragraph_main,
 #second_paragraph_main {
   color: white;
-
   position: absolute;
   width: 25%;
 }
@@ -52,4 +49,30 @@
   right: 0;
   top: 50%;
   margin: 0;
+}
+.main_page_numbers {
+  color: white;
+  display: flex;
+  flex-direction: column;
+
+  position: absolute;
+  right: 0;
+  width: 20%;
+  text-align: center;
+  top: 35%;
+}
+.main_page_numbers > p {
+  font-size: 1.2rem;
+}
+.img_main {
+  clip-path: url(#svg_img_main);
+  aspect-ratio: 1/1;
+  width: 62%;
+  height: 100%;
+  object-fit: cover;
+}
+svg {
+  border: 2px solid red;
+  height: 0;
+  width: 0;
 }
