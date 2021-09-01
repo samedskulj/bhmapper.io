@@ -1,0 +1,55 @@
+.main_page_section {
+  display: flex;
+
+  height: 80vh;
+  position: relative;
+  align-items: center;
+  justify-content: center;
+}
+.main_middle {
+  width: 60%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  position: relative;
+}
+.main_page_section > h1 {
+  position: absolute;
+  top: 0;
+  margin: 0;
+  padding: 0;
+  top: 25%;
+  left: -5.5rem;
+  color: white;
+  font-size: 12rem;
+}
+.main_page_section h2 {
+  position: absolute;
+  top: 35%;
+  color: rgba(102, 102, 102, 0.198);
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 30rem;
+  width: 100%;
+
+  margin: 0;
+  padding: 0;
+}
+#first_paragraph_main,
+#second_paragraph_main {
+  color: white;
+
+  position: absolute;
+  width: 25%;
+}
+#first_paragraph_main {
+  top: 70%;
+  left: 0;
+  margin: 0;
+}
+#second_paragraph_main {
+  right: 0;
+  top: 50%;
+  margin: 0;
+}

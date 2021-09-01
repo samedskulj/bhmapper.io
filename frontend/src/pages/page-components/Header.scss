@@ -1,0 +1,26 @@
+.nav_bhmapper {
+  height: 5vh;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2rem;
+  color: white;
+  background-color: #242426;
+}
+.nav_links {
+  display: flex;
+  width: 25%;
+  justify-content: space-between;
+  text-align: center;
+}
+
+.nav_brand > p {
+  font-size: 1.2rem;
+  text-transform: uppercase;
+}
+.nav_links > a {
+  text-decoration: none;
+  color: white;
+  font-size: 0.9rem;
+  text-transform: uppercase;
+}
