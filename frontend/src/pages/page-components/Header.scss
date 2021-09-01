@@ -1,4 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap");
+/* Variables */
+$backgroundColor: #242426;
 
 .nav_bhmapper {
   height: 5vh;
@@ -7,7 +9,7 @@
   align-items: center;
   padding: 2rem;
   color: white;
-  background-color: #242426;
+  background-color: $backgroundColor;
   font-family: "Bebas Neue", cursive;
   font-weight: bold;
 }
@@ -29,4 +31,31 @@
   font-size: 1.3rem;
   text-transform: uppercase;
   letter-spacing: 0.2rem;
+}
+.nav_icon {
+  display: none;
+}
+#hidden {
+  display: flex;
+}
+
+@media only screen and (max-width: 768px) {
+  .nav_links {
+    display: none;
+  }
+  #hidden {
+    position: absolute;
+    left: 0px;
+    top: 10vh;
+    height: 230px;
+    width: 100%;
+    justify-content: space-around;
+    display: flex;
+    flex-direction: column;
+    z-index: 10000;
+    background-color: $backgroundColor;
+  }
+  .nav_icon {
+    display: flex;
+  }
 }
