@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap");
+
 .nav_bhmapper {
   height: 5vh;
   display: flex;
@@ -6,6 +8,8 @@
   padding: 2rem;
   color: white;
   background-color: #242426;
+  font-family: "Bebas Neue", cursive;
+  font-weight: bold;
 }
 .nav_links {
   display: flex;
@@ -15,12 +19,14 @@
 }
 
 .nav_brand > p {
-  font-size: 1.2rem;
+  font-size: 1.8rem;
   text-transform: uppercase;
+  letter-spacing: 0.2rem;
 }
 .nav_links > a {
   text-decoration: none;
   color: white;
-  font-size: 0.9rem;
+  font-size: 1.3rem;
   text-transform: uppercase;
+  letter-spacing: 0.2rem;
 }

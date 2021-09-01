@@ -1,9 +1,14 @@
+@import url("https://fonts.googleapis.com/css2?family=Kaisei+HarunoUmi:wght@700&family=Montserrat:wght@200&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap");
+
 .main_page_section {
   display: flex;
   height: 80vh;
   position: relative;
   align-items: center;
   justify-content: center;
+  font-family: "Kaisei HarunoUmi", serif;
+  overflow-x: hidden;
 }
 .main_middle {
   width: 60%;
@@ -12,6 +17,8 @@
   align-items: center;
   height: 100%;
   position: relative;
+  font-family: "Montserrat", sans-serif;
+  line-height: 1.4rem;
 }
 .main_page_section > h1 {
   position: absolute;
@@ -22,15 +29,17 @@
   left: -5.5rem;
   color: white;
   font-size: 12rem;
+  z-index: 1000;
 }
 .main_page_section h2 {
   position: absolute;
   top: 0;
   color: rgba(102, 102, 102, 0.198);
   left: 0;
-  font-size: 30rem;
+  font-size: 25rem;
   height: 100%;
-  width: 99%;
+  width: 120%;
+  letter-spacing: 2rem;
   margin: 0;
   padding: 0;
 }
@@ -54,15 +63,18 @@
   color: white;
   display: flex;
   flex-direction: column;
-
   position: absolute;
   right: 0;
   width: 20%;
-  text-align: center;
   top: 35%;
+  justify-content: space-between;
+  align-items: center;
+  height: 25%;
 }
-.main_page_numbers > p {
-  font-size: 1.2rem;
+.main_page_numbers > button {
+  font-size: 1.4rem;
+  font-family: "Bebas Neue", cursive;
+  font-weight: bold;
 }
 .img_main {
   clip-path: url(#svg_img_main);
@@ -75,4 +87,17 @@ svg {
   border: 2px solid red;
   height: 0;
   width: 0;
+}
+/* Button design */
+
+.btn_page {
+  width: 20%;
+  color: white;
+  background-color: transparent;
+  cursor: pointer;
+  border: 0;
+  transition: 0.3s ease-in-out;
+}
+.btn_page:hover {
+  border-bottom: 1px solid white;
 }
