@@ -9,6 +9,8 @@ import { bosniaXV } from "./Functions/bosniaXV";
 import { bosniaOttoman } from "./Functions/bosniaOttoman";
 import { bosniaAustro } from "./Functions/bosniaAustro";
 import { bosniaModern } from "./Functions/bosniaModern";
+import MapAccordion from "./MapAccordion";
+import { Button, Link } from "@material-ui/core";
 
 const Map = () => {
   const [changeMap, setChangeMap] = useState();
@@ -19,7 +21,7 @@ const Map = () => {
 
     const map = new mapboxgl.Map({
       container: mapRef.current, // container ID
-      style: "mapbox://styles/mapbox/light-v10", // style URL
+      style: "mapbox://styles/mapbox/dark-v10", // style URL
       center: [17.6791, 43.9159], // starting position
       zoom: 7, // starting zoom
     });
@@ -56,24 +58,26 @@ const Map = () => {
 
   return (
     <>
-      <button onClick={() => changeBosnia("bosniax")}>Bosnia X</button>
-      <button onClick={() => changeBosnia("bosniakulin")}>
-        Bosnia Kulin Ban
-      </button>
-      <button onClick={() => changeBosnia("bosniatvrtko")}>
-        Bosnia Tvrtko
-      </button>
-      <button onClick={() => changeBosnia("bosniaxv")}>Bosnia XV</button>
-      <button onClick={() => changeBosnia("bosniaottoman")}>
-        Bosnia Ottoman
-      </button>
-      <button onClick={() => changeBosnia("bosniaaustro")}>
-        Bosnia Austro
-      </button>
-      <button onClick={() => changeBosnia("bosniamodern")}>
-        Bosnia Modern
-      </button>
-      <div ref={mapRef} className="mapRef"></div>
+      <div className="map_page">
+        <main className="map_accordion_div_flex">
+          <div className="map_accordion_link">
+            <Link to="/" style={{ textDecoration: "none" }}>
+              <Button variant="outlined" style={{ color: "white" }}>
+                Get Back
+              </Button>
+            </Link>
+          </div>
+          <div className="map_accordion_scroll">
+            <MapAccordion
+              changeBosnia={changeBosnia}
+              changeBosniaPage={changeBosniaPage}
+              changeMap={changeMap}
+              setChangeMap={setChangeMap}
+            />
+          </div>
+        </main>
+        <div ref={mapRef} className="mapRef"></div>
+      </div>
     </>
   );
 };
