@@ -10,7 +10,8 @@ import { bosniaOttoman } from "./Functions/bosniaOttoman";
 import { bosniaAustro } from "./Functions/bosniaAustro";
 import { bosniaModern } from "./Functions/bosniaModern";
 import MapAccordion from "./MapAccordion";
-import { Button, Link } from "@material-ui/core";
+import { Button } from "@material-ui/core";
+import { Link } from "react-router-dom";
 
 const Map = () => {
   const [changeMap, setChangeMap] = useState();

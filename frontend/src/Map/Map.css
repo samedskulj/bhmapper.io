@@ -17,6 +17,8 @@
 .map_accordion_div_flex {
   display: flex;
   flex-direction: column;
+
+  width: 100%;
 }
 .map_accordion_link {
   padding: 0.6rem 2rem;
