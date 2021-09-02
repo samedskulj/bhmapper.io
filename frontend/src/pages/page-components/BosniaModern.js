@@ -1,12 +1,12 @@
 import React from "react";
 import "./MainPage.scss";
 import Modern from "../../images/mesdzid-scc.jpg";
+import { Button } from "@material-ui/core";
+import { Link } from "react-router-dom";
+
 const BosniaModern = () => {
   return (
     <>
-      <h2>Learn it.</h2>
-      <h1>History.</h1>
-
       <div className="main_middle">
         <img src={Modern} className="img_main" alt="modern"></img>
 
@@ -24,6 +24,11 @@ const BosniaModern = () => {
             vestibulum lectus mauris ultrices eros. Vulputate sapien nec
             sagittis aliquam.
           </p>
+        </div>
+        <div className="main_page_btn">
+          <Link to="/map" style={{ textDecoration: "none" }}>
+            <Button variant="outlined">Enter Map</Button>
+          </Link>
         </div>
       </div>
     </>

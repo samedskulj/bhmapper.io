@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import "./Header.scss";
 import ReorderIcon from "@material-ui/icons/Reorder";
 const Header = () => {
-  const [showLinks, setShowLinks] = useState(true);
+  const [showLinks, setShowLinks] = useState(false);
   return (
     <>
       <nav className="nav_bhmapper">

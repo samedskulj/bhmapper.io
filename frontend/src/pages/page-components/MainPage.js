@@ -14,6 +14,8 @@ const MainPage = () => {
   return (
     <>
       <section className="main_page_section">
+        <h2>Learn it.</h2>
+        <h1>History.</h1>
         {pageAge === "middleage" && <BosniaMiddle></BosniaMiddle>}
         {pageAge === "ottoman" && <BosniaOttoman></BosniaOttoman>}
         {pageAge === "modernage" && <BosniaModern></BosniaModern>}

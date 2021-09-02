@@ -23,11 +23,17 @@ const Map = () => {
       center: [17.6791, 43.9159], // starting position
       zoom: 7, // starting zoom
     });
+    changeBosniaPage(changeMap, map);
+  }, [changeMap]);
 
+  const changeBosnia = (bosnia) => {
+    setChangeMap(bosnia);
+  };
+
+  const changeBosniaPage = (bosnia, map) => {
     if (changeMap === "bosniakulin") {
       bosniaKulinBan(map);
     }
-
     if (changeMap === "bosniax") {
       bosniaX(map);
     }
@@ -46,10 +52,6 @@ const Map = () => {
     if (changeMap === "bosniamodern") {
       bosniaModern(map);
     }
-  }, [changeMap]);
-
-  const changeBosnia = (bosnia) => {
-    setChangeMap(bosnia);
   };
 
   return (
