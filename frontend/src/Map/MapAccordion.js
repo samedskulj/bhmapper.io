@@ -24,16 +24,16 @@ const MapAccordion = ({
           onClick={() => changeBosnia("bosniax")}
         >
           <AccordionSummary
-            expandIcon={<ExpandMoreIcon />}
+            expandIcon={<ExpandMoreIcon className={classes.svg} />}
             aria-controls="panel1a-content"
             id="panel1a-header"
           >
-            <Typography id="font_bosniax" className="font_accordion">
+            <p id="font_bosniax" className="font_accordion">
               Bosnia in the X century...
-            </Typography>
+            </p>
           </AccordionSummary>
           <AccordionDetails>
-            <Typography className="font_accordion">
+            <p className="font_accordion">
               The Early Slavs raided the Western Balkans, including Bosnia, in
               the 6th and early 7th century (amid the Migration Period), and
               were composed of small tribal units drawn from a single Slavic
@@ -66,7 +66,7 @@ const MapAccordion = ({
               Bosnian. Bosnia, along with other territories, became part of
               Duklja in the 11th century, although it retained its own nobility
               and institutions.
-            </Typography>
+            </p>
           </AccordionDetails>
         </Accordion>
         <Accordion
@@ -78,12 +78,12 @@ const MapAccordion = ({
             aria-controls="panel1a-content"
             id="panel1a-header"
           >
-            <Typography id="font_bosniakulin" className="font_accordion">
+            <p id="font_bosniakulin" className="font_accordion">
               The Good Ol' Days of Kulin Ban
-            </Typography>
+            </p>
           </AccordionSummary>
           <AccordionDetails>
-            <Typography className="font_accordion">
+            <p className="font_accordion">
               In the High Middle Ages, political circumstance led to the area
               being contested between the Kingdom of Hungary and the Byzantine
               Empire. Following another shift of power between the two in the
@@ -101,7 +101,7 @@ const MapAccordion = ({
               this time, the population was called Dobri Bošnjani ("Good
               Bosnians").The names Serb and Croat, though occasionally appearing
               in peripheral areas, were not used in Bosnia proper
-            </Typography>
+            </p>
           </AccordionDetails>
         </Accordion>
         <Accordion
@@ -113,22 +113,51 @@ const MapAccordion = ({
             aria-controls="panel1a-content"
             id="panel1a-header"
           >
-            <Typography className="font_accordion">Tvrtko's reign</Typography>
+            <p id="font_bosniatvrtko" className="font_accordion">
+              Tvrtko's reign
+            </p>
           </AccordionSummary>
           <AccordionDetails>
-            <Typography id="font_bosniatvrtko" className="font_accordion">
+            <p className="font_accordion">
               Bosnian history from then until the early 14th century was marked
               by a power struggle between the Šubić and Kotromanić families.
-              This conflict came to an end in 1322, when Stephen II Kotromanić
-              became Ban. By the time of his death in 1353, he was successful in
-              annexing territories to the north and west, as well as Zahumlje
-              and parts of Dalmatia. He was succeeded by his ambitious nephew
-              Tvrtko who, following a prolonged struggle with nobility and
-              inter-family strife, gained full control of the country in 1367.
-              By the year 1377, Bosnia was elevated into a kingdom with the
-              coronation of Tvrtko as the first Bosnian King in Mile near Visoko
-              in the Bosnian heartland.
-            </Typography>
+              Kotromanić Dynasty, royal house that ruled Bosnia from the late
+              13th to the mid-15th century. The dynasty was founded by Stephen
+              Kotroman, a vassal of the Hungarian king and the ruler of a
+              portion of Bosnia from 1287 to 1316. His son Stephen Kotromanić
+              became the independent lord of all Bosnia in 1322. Extending his
+              domain southward, Stephen Kotromanić incorporated both the land of
+              Hum (1325; later called Hercegovina) and the Adriatic coastline
+              between Split and the Neretva River. <br></br> <br></br>
+              Although challenged by Hungarian aggression and internal
+              uprisings, his nephew and successor, Tvrtko I (reigned 1353–91),
+              established firm control over a reduced Bosnia by 1370; he then
+              recovered Bosnia’s lost territory, extended his lands along the
+              Adriatic coast and into Serbia, and in 1377 crowned himself “king
+              of the Serbs, of Bosnia, and of the coast.” By 1390 he had also
+              claimed the titles “king of Dalmatia and Croatia” and had made
+              Bosnia the dominant power among the South Slavs. Under Tvrtko’s
+              successors, however, constant dynastic quarrels and the increased
+              influence of a few magnates diminished the authority of the
+              throne; Hungarian and Turk intervention also reduced the size and
+              undermined the independence of the Bosnian state until the Turks
+              incorporated it into their empire (1463) and executed the last
+              Kotromanić king, Stephen Tomašević (reigned 1461–63). Tvrtko’s
+              successors were his brother Stephen Dabiša (reigned 1391–95),
+              Dabiša’s widow Jelena Gruba (1395–98), Tvrtko’s illegitimate son
+              Stephen Ostoja (1398–1404, 1409–18), Tvrtko’s son Tvrtko II
+              (1404–09, 1420–43), Ostoja’s son Stephen Ostojić (1418–20),
+              Ostoja’s illegitimate son Stephen Tomas Ostojić (1443–61), and
+              Stephen Tomašević. This conflict came to an end in 1322, when
+              Stephen II Kotromanić became Ban. By the time of his death in
+              1353, he was successful in annexing territories to the north and
+              west, as well as Zahumlje and parts of Dalmatia. He was succeeded
+              by his ambitious nephew Tvrtko who, following a prolonged struggle
+              with nobility and inter-family strife, gained full control of the
+              country in 1367. By the year 1377, Bosnia was elevated into a
+              kingdom with the coronation of Tvrtko as the first Bosnian King in
+              Mile near Visoko in the Bosnian heartland.
+            </p>
           </AccordionDetails>
         </Accordion>
         <Accordion
@@ -140,12 +169,12 @@ const MapAccordion = ({
             aria-controls="panel1a-content"
             id="panel1a-header"
           >
-            <Typography className="font_accordion">
+            <p id="font_bosniaxv" className="font_accordion">
               Dark Age of Bosnia a.k.a XV century
-            </Typography>
+            </p>
           </AccordionSummary>
           <AccordionDetails>
-            <Typography id="font_bosniaxv" className="font_accordion">
+            <p className="font_accordion">
               Following his death in 1391 however, Bosnia fell into a long
               period of decline. The Ottoman Empire had started its conquest of
               Europe and posed a major threat to the Balkans throughout the
@@ -158,7 +187,7 @@ const MapAccordion = ({
               differences in political and social development, but it was kept
               in Herzegovina and parts of Bosnia which were a part of Serbian
               state.
-            </Typography>
+            </p>
           </AccordionDetails>
         </Accordion>
         <Accordion
@@ -170,12 +199,12 @@ const MapAccordion = ({
             aria-controls="panel1a-content"
             id="panel1a-header"
           >
-            <Typography className="font_accordion">
+            <p id="font_bosniaottoman" className="font_accordion">
               Ottoman Period in the Bosnia
-            </Typography>
+            </p>
           </AccordionSummary>
           <AccordionDetails>
-            <Typography id="font_bosniaottoman" className="font_accordion">
+            <p className="font_accordion">
               The Ottoman conquest of Bosnia marked a new era in the country's
               history and introduced drastic changes in the political and
               cultural landscape. The Ottomans incorporating Bosnia as an
@@ -261,7 +290,7 @@ const MapAccordion = ({
               rapidly spread and came to involve several Balkan states and Great
               Powers, a situation that led to the Congress of Berlin and the
               Treaty of Berlin in 1878.
-            </Typography>
+            </p>
           </AccordionDetails>
         </Accordion>
         <Accordion
@@ -273,16 +302,76 @@ const MapAccordion = ({
             aria-controls="panel1a-content"
             id="panel1a-header"
           >
-            <Typography id="font_bosniaaustro" className="font_accordion">
+            <p id="font_bosniaaustro" className="font_accordion">
               Bosnia and The Austro-Hungarian Empire
-            </Typography>
+            </p>
           </AccordionSummary>
           <AccordionDetails>
-            <Typography className="font_accordion">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-              Suspendisse malesuada lacus ex, sit amet blandit leo lobortis
-              eget.
-            </Typography>
+            <p className="font_accordion">
+              Bosnia and Herzegovina was declared a “crown land” and was
+              governed by a special joint commission under the Common Ministry
+              of Finance. The Ottoman administrative division was preserved, and
+              Ottoman laws were only gradually replaced or supplemented. This
+              policy of gradualism was the most striking aspect of
+              Austro-Hungarian rule in Bosnia and Herzegovina under Common
+              Finance Minister Benjamin Kállay, a specialist in South Slav
+              history who directed Bosnian policy from 1882 to 1903. Indeed, a
+              common criticism of Austro-Hungarian rule was that little was done
+              to resolve tensions between landlords and peasants. In other
+              areas, however, Kállay’s rule was extremely active. A public works
+              program was initiated, and by 1907 Bosnia and Herzegovina had a
+              well-developed infrastructure, including an extensive railway and
+              road network. Mines and factories were developed, and agriculture
+              was promoted with model farms and training colleges. Three high
+              schools and nearly 200 primary schools were built, although
+              compulsory education was not introduced until 1909. <br></br>
+              <br></br> While he succeeded in many of these areas of practical
+              improvement, Kállay failed in his central political project:
+              developing a Bosnian national consciousness to insulate the people
+              of Bosnia and Herzegovina from the growing movements of Croatian,
+              Serbian, and Yugoslav (“South Slav”) nationalism. Roman Catholic
+              and Orthodox people of Bosnia and Herzegovina had begun by the
+              mid-19th century to identify themselves as “Croats” and “Serbs,”
+              respectively. At the same time, Muslim intellectuals were
+              campaigning for greater powers over the Islamic institutions of
+              Bosnia and Herzegovina, thereby becoming quasi-political
+              representatives of a Muslim community with its own distinctive
+              interests. During the first decade of the 20th century, new
+              “national organizations” of Muslims, Serbs, and Croats functioned
+              as embryonic political parties. In response, Kállay’s successor,
+              István, Freiherr (baron) Burián, granted a degree of autonomy in
+              religious affairs to both the Muslims and the Serbs of Bosnia and
+              Herzegovina. <br></br>
+              <br></br> In October 1908 nationalist feeling was strongly aroused
+              by the sudden announcement that Bosnia and Herzegovina would be
+              fully annexed by Austria-Hungary. The decision, which caught other
+              great powers by surprise and created a diplomatic crisis lasting
+              many months, was prompted by the revolution of the Young Turks in
+              Constantinople. The Young Turks appeared ready to establish a more
+              democratic regime in the Ottoman Empire, which could then
+              plausibly reclaim Turkish rights over Bosnia and Herzegovina.
+              Inside Bosnia and Herzegovina, one effect of this change was
+              beneficial: Burián felt able to promote democratic institutions,
+              and a parliament (with limited powers) was introduced there in
+              1910. But the bitter resentment that the annexation caused among
+              Serb and South Slav nationalists led to the growth of
+              revolutionary groups and secret societies dedicated to the
+              overthrow of Habsburg rule. One of these, Mlada Bosna (“Young
+              Bosnia”), was especially active in Bosnian schools and
+              universities. <br></br>
+              <br></br> Tension was heightened by the First Balkan War of
+              1912–13, in which Serbia expanded southward, driving Turkish
+              forces out of Kosovo, Novi Pazar, and Macedonia. In May 1913 the
+              military governor of Bosnia and Herzegovina, Gen. Oskar Potiorek,
+              declared a state of emergency, dissolved the parliament, closed
+              down Serb cultural associations, and suspended the civil courts.
+              The following year the heir to the Habsburg throne, Archduke Franz
+              Ferdinand, traveled to Bosnia and Herzegovina to review a military
+              exercise. He was killed in Sarajevo on June 28, 1914, by a young
+              assassin from the Mlada Bosna organization, Gavrilo Princip, who
+              had received some assistance from inside Serbia. Austria-Hungary
+              declared war on Serbia one month later, precipitating World War I.
+            </p>
           </AccordionDetails>
         </Accordion>
         <Accordion
@@ -294,16 +383,133 @@ const MapAccordion = ({
             aria-controls="panel1a-content"
             id="panel1a-header"
           >
-            <Typography id="font_bosniamodern" className="font_accordion">
+            <p id="font_bosniamodern" className="font_accordion">
               Who started the war? - Modern Day of Bosnia
-            </Typography>
+            </p>
           </AccordionSummary>
           <AccordionDetails>
-            <Typography className="font_accordion">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-              Suspendisse malesuada lacus ex, sit amet blandit leo lobortis
-              eget.
-            </Typography>
+            <p className="font_accordion">
+              In 1946 the People’s Republic (from 1963, Socialist Republic) of
+              Bosnia and Herzegovina became one of the constituent republics of
+              the Federal People’s (from 1963, Socialist Federal) Republic of
+              Yugoslavia, and life in Bosnia and Herzegovina underwent all the
+              social, economic, and political changes that were imposed on the
+              whole of Yugoslavia by its new communist government. Bosnia and
+              Herzegovina was particularly affected by the abolition of many
+              traditional Muslim institutions, such as Qurʾānic primary schools,
+              rich charitable foundations, and Dervish religious orders.
+              However, a change of official policy in the 1960s led to the
+              acceptance of “Muslim” as a term denoting a national identity: the
+              phrase “Muslim in the ethnic sense” was used in the 1961 census,
+              and in 1968 the Bosnian Central Committee decreed that “the
+              Muslims are a distinct nation.” By 1971 Muslims formed the largest
+              single component of the Bosnian population. During the next 20
+              years the Serb and Croat populations fell in absolute terms as
+              many Serbs and Croats emigrated. In the 1991 census Muslims made
+              up more than two-fifths of the Bosnian population, while Serbs
+              made up slightly less than one-third and Croats one-sixth. From
+              the mid-1990s the term Bosniak replaced Muslim as the name Bosnian
+              Muslims use for themselves.
+              <br></br>
+              <br></br>
+              In the 1980s the rapid decline of the Yugoslav economy led to
+              widespread public dissatisfaction with the political system. That
+              attitude, together with the manipulation of nationalist feelings
+              by politicians, destabilized Yugoslav politics. Independent
+              political parties appeared by 1989. In early 1990, multiparty
+              elections were held in Slovenia and Croatia. When elections were
+              held in Bosnia and Herzegovina in December, new parties
+              representing the three national communities gained seats in rough
+              proportion to their populations. A tripartite coalition government
+              was formed, with the Bosniak politician Alija Izetbegović leading
+              a joint presidency. Growing tensions both inside and outside
+              Bosnia and Herzegovina, however, made cooperation with the Serb
+              Democratic Party, led by Radovan Karadžić, increasingly difficult.
+              <br></br>
+              <br></br>
+              In 1991 several self-styled “Serb Autonomous Regions” were
+              declared in areas of Bosnia and Herzegovina with large Serb
+              populations. Evidence emerged that the Yugoslav People’s Army was
+              being used to send secret arms deliveries to the Bosnian Serbs
+              from Belgrade (Serbia). In August the Serb Democratic Party began
+              boycotting the Bosnian presidency meetings, and in October it
+              removed its deputies from the Bosnian assembly and set up a “Serb
+              National Assembly” in Banja Luka. By then full-scale war had
+              broken out in Croatia, and the breakup of Yugoslavia was under
+              way. Bosnia and Herzegovina’s position became highly vulnerable.
+              The possibility of partitioning Bosnia and Herzegovina had been
+              discussed during talks between the Croatian president, Franjo
+              Tudjman, and the Serbian president, Slobodan Milošević, earlier in
+              the year, and two Croat “communities” in northern and southwestern
+              Bosnia and Herzegovina, similar in some ways to the “Serb
+              Autonomous Regions,” were proclaimed in November 1991.
+              <br></br>
+              <br></br>
+              Attempts by EC negotiators to promote a new division of Bosnia and
+              Herzegovina into ethnic “cantons” during February and March 1992
+              failed: different versions of those plans were rejected by each of
+              the three main ethnic parties. When Bosnia and Herzegovina’s
+              independence was recognized by the United States and the EC on
+              April 7, Bosnian Serb paramilitary forces immediately began firing
+              on Sarajevo, and the artillery bombardment of the city by Bosnian
+              Serb units of the Yugoslav army began soon thereafter. During
+              April many of the towns in eastern Bosnia and Herzegovina with
+              large Bosniak populations, such as Zvornik, Foča, and Višegrad,
+              were attacked by a combination of paramilitary forces and Yugoslav
+              army units. Most of the local Bosniak population was expelled from
+              these areas, the first victims in the country of a process
+              described as ethnic cleansing. Although Bosniaks were the primary
+              victims and Serbs the primary perpetrators, Croats were also among
+              the victims and perpetrators. Within six weeks a coordinated
+              offensive by the Yugoslav army, paramilitary groups, and local
+              Bosnian Serb forces brought roughly two-thirds of Bosnian
+              territory under Serb control. In May the army units and equipment
+              in Bosnia and Herzegovina were placed under the command of a
+              Bosnian Serb general, Ratko Mladić.
+              <br></br>
+              <br></br>
+              From the summer of 1992, the military situation remained fairly
+              static. A hastily assembled Bosnian government army, together with
+              some better-prepared Bosnian Croat forces, held the front lines
+              for the rest of that year, though its power was gradually eroded
+              in parts of eastern Bosnia and Herzegovina. The Bosnian government
+              was weakened militarily by an international arms embargo and by a
+              conflict in 1993–94 with Croat forces. But later in 1994, Bosnian
+              Croats and Bosniaks agreed to form a joint federation. The United
+              Nations (UN) refused to intervene in the Bosnian War, but UN
+              Protection Force (UNPROFOR) troops did facilitate the delivery of
+              humanitarian aid. The organization later extended its role to the
+              protection of a number of UN-declared “safe areas.” However, the
+              UN failed to protect the safe area of Srebrenica in July 1995,
+              when Bosnian Serb forces perpetrated the massacre of more than
+              7,000 Bosniak men (see Srebrenica massacre).
+              <br></br>
+              <br></br>
+              Several peace proposals during the war failed, largely because the
+              Bosnian Serbs—who controlled about 70 percent of the land by
+              1994—refused to concede any territory. In February 1994, in NATO’s
+              first-ever use of force, its fighters shot down four Bosnian Serb
+              aircraft that were violating the UN-imposed no-fly zone over the
+              country. Later that year, at the UN’s request, NATO launched
+              isolated and ineffective air strikes against Bosnian Serb targets.
+              Following the Srebrenica massacre and another Bosnian Serb attack
+              on a Sarajevo marketplace, NATO undertook more concentrated air
+              strikes late in 1995. Combined with a large-scale Bosniak-Croat
+              land offensive, this action led Bosnian Serb forces to agree to
+              U.S.-sponsored peace talks in Dayton in November. Serbian Pres.
+              Slobodan Milošević represented the Bosnian Serbs. The resulting
+              Dayton Accords called for a federalized Bosnia and Herzegovina in
+              which 51 percent of the land would constitute a Croat-Bosniak
+              federation and 49 percent a Serb republic. To enforce the
+              agreement, formally signed in December 1995, a 60,000-member
+              international force was deployed.
+              <br></br>
+              <br></br>
+              It was originally estimated that at least 200,000 people were
+              killed and more than 2,000,000 displaced during the 1992–95 war.
+              Subsequent studies, however, concluded that the death toll was
+              actually about 100,000.
+            </p>
           </AccordionDetails>
         </Accordion>
       </div>

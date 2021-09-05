@@ -12,9 +12,11 @@ import { bosniaModern } from "./Functions/bosniaModern";
 import MapAccordion from "./MapAccordion";
 import { Button } from "@material-ui/core";
 import { Link } from "react-router-dom";
+import ArrowBackIcon from "@material-ui/icons/ArrowBack";
 
 const Map = () => {
   const [changeMap, setChangeMap] = useState();
+  const [changeClass, setChangeClass] = useState(true);
   const mapRef = useRef();
 
   useEffect(() => {
@@ -26,8 +28,12 @@ const Map = () => {
       center: [17.6791, 43.9159], // starting position
       zoom: 7, // starting zoom
     });
+
+    map.on("idle", function () {
+      map.resize();
+    });
     changeBosniaPage(changeMap, map);
-  }, [changeMap]);
+  }, [changeMap, changeClass]);
 
   const changeBosnia = (bosnia) => {
     setChangeMap(bosnia);
@@ -57,16 +63,30 @@ const Map = () => {
     }
   };
 
+  console.log(changeClass);
+
   return (
     <>
       <div className="map_page">
-        <main className="map_accordion_div_flex">
+        <main
+          className={
+            changeClass
+              ? "map_accordion_div_flex"
+              : "map_accordion_div_flex clear"
+          }
+        >
           <div className="map_accordion_link">
             <Link to="/" style={{ textDecoration: "none" }}>
               <Button variant="outlined" style={{ color: "white" }}>
                 Get Back
               </Button>
             </Link>
+            <div>
+              <ArrowBackIcon
+                style={{ cursor: "pointer" }}
+                onClick={() => setChangeClass(!changeClass)}
+              ></ArrowBackIcon>
+            </div>
           </div>
           <div className="map_accordion_scroll">
             <MapAccordion
@@ -76,8 +96,19 @@ const Map = () => {
               setChangeMap={setChangeMap}
             />
           </div>
-        </main>
-        <div ref={mapRef} className="mapRef"></div>
+        </main>{" "}
+        {changeClass === false && (
+          <div className="back_accordion_div">
+            <Button
+              onClick={() => setChangeClass(!changeClass)}
+              startIcon={<ArrowBackIcon />}
+              variant="contained"
+            >
+              Get back
+            </Button>
+          </div>
+        )}
+        <div ref={mapRef} className={changeClass ? "mapRef" : "mapFull"}></div>
       </div>
     </>
   );

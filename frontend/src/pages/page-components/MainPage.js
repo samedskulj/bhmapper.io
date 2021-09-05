@@ -3,7 +3,7 @@ import "./MainPage.scss";
 import BosniaMiddle from "./BosniaMiddle";
 import BosniaOttoman from "./BosniaOttoman";
 import BosniaModern from "./BosniaModern";
-
+import { AnimatePresence, motion } from "framer-motion";
 const MainPage = () => {
   const [svg, setSvg] = useState(true);
   const [pageAge, setPageAge] = useState("middleage");

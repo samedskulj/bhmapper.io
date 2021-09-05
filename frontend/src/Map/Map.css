@@ -1,6 +1,13 @@
 .mapRef {
   height: 100vh;
   width: 75%;
+  position: relative;
+}
+.mapFull {
+  width: 100%;
+  top: 0;
+  left: 0;
+  height: 100%;
 }
 .map_page {
   display: flex;
@@ -22,4 +29,23 @@
 }
 .map_accordion_link {
   padding: 0.6rem 2rem;
+  display: flex;
+  justify-content: space-between;
+}
+.map_accordion_link svg {
+  color: white;
+}
+.clear {
+  display: none;
+}
+.back_accordion_div {
+  background: transparent;
+}
+.back_accordion_div button {
+  width: 10rem;
+  height: 3rem;
+  z-index: 1000;
+  top: 5%;
+  left: 2%;
+  position: absolute;
 }
