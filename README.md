@@ -35,5 +35,6 @@ Here is the list of technologies used to make this website
 * React JS
 * MaterialUI
 * Framer Motion
+* Mapbox API
 
 
