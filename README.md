@@ -37,4 +37,6 @@ Here is the list of technologies used to make this website
 * Framer Motion
 * Mapbox API
 
+# GEOJSON 
+For this app I have used coordinates from http://geojson.io/ website. If you have any questions of how did I do it, please make sure to contact me by visiting my portfolio page www.samedskulj.com
 
