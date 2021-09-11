@@ -1,5 +1,4 @@
 import React, { useState, useEffect, useRef } from "react";
-import ReactMapGL from "react-map-gl";
 import mapboxgl from "mapbox-gl";
 import { bosniaKulinBan } from "./Functions/bosniaKulinBan";
 import { bosniaX } from "./Functions/bosniaX";
