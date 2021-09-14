@@ -30,12 +30,9 @@ On this screen, you can see all of the history maps of Bosnia. You can check out
 
 Here is the list of technologies used to make this website
 
-* HTML/CSS/SCSS
-* JavaScript
-* React JS
-* MaterialUI
-* Framer Motion
-* Mapbox API (https://www.mapbox.com/)
+**Frontend**: HTML, CSS, SCSS, JavaScript, React JS, MaterialUI, Framer Motion <br/>
+**API**: MapBox API (https://www.mapbox.com/)
+
 
 # GEOJSON 
 For this app I have used coordinates from http://geojson.io/ website. If you have any questions of how did I do it, please make sure to contact me by visiting my portfolio page www.samedskulj.com
