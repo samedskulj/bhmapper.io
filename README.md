@@ -39,4 +39,4 @@ For this app I have used coordinates from http://geojson.io/ website. If you hav
 
 # Deployment
 
-This web application is not deployed. Currently working on it
+This web application is deployed on Netlify. Check it out https://bhmapper.netlify.app/
