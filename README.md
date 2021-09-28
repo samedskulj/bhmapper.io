@@ -40,3 +40,7 @@ For this app I have used coordinates from http://geojson.io/ website. If you hav
 # Deployment
 
 This web application is deployed on Netlify. Check it out https://bhmapper.netlify.app/
+
+# Perfomance
+
+The web application has everything in the "green" zone when it comes to perfomance and stability of the application. It has been tested using Lighthouse
